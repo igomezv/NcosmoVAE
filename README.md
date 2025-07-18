@@ -26,6 +26,21 @@ After installation, you may remove the cloned repository as **`nnogada`** will b
 
 ## Usage
 
+### Conda Environment Setup
+
+To set up a clean conda environment with the required dependencies:
+
+1. Create the environment from the `environment.yml` file:
+
+```bash
+  conda env create -f environment.yml
+  ```
+
+2. Activate the environment:
+  ```bash
+  conda activate ncosmovae_env
+  ```
+
 Please check examples included in this repository (`example_1.py`, `example_2.py`).
 
 ## Citing `ncosmovae`
