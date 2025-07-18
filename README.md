@@ -45,14 +45,10 @@ If you find **`ncosmovae`** useful in your research, please consider citing [our
 }
 ```
 
-
 ## Contributions
 
 Contributions to **`NcosmoVAE`** are very welcome! If you have suggestions for improvements or new features, feel free to create an issue or pull request.
 
-## TODO
-
-- [ ] To include support for other neural network architectures such as Convolutional Neural Networks (CNNs) and Variational Autoencoders (VAEs).
 
 ## Project Structure
 
