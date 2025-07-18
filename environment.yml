@@ -1,0 +1,17 @@
+name: ncosmovae_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - tensorflow=2.15
+  - numpy
+  - matplotlib
+  - scikit-image
+  - opencv
+  - pillow
+  - scikit-learn
+  - pip:
+      - keras
+
