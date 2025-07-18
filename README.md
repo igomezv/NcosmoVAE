@@ -10,7 +10,7 @@ Run with: tensorflow 2.15 and python 3.9.
 
 ## Documentation
 
-For an introduction and API documentation, visit [`nnogada` Docs](https://igomezv.github.io/NcosmoVAE).
+For an introduction and API documentation, visit [ncosmovae` Docs](https://igomezv.github.io/NcosmoVAE).
 
 ## Installation
 
