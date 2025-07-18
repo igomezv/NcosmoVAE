@@ -2,6 +2,8 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from ncosmovae import NcosmoVAE, load_dataset
+from tensorflow.keras.callbacks import EarlyStopping
+
 
 # Config
 image_size = 256
@@ -22,13 +24,20 @@ Y_train, Y_val = Y[:split], Y[split:]
 vae = NcosmoVAE(image_size=image_size, latent_dim=latent_dim)
 vae.compile(optimizer=tf.keras.optimizers.Adam(1e-4))
 
-# Train
+early_stop = EarlyStopping(
+    monitor='val_loss',
+    patience=5,
+    min_delta=1e-5,
+    restore_best_weights=True
+)
+
 history = vae.fit(
     x=X_train,
     y=Y_train,
     validation_data=(X_val, Y_val),
-    epochs=50,
-    batch_size=4
+    epochs=20,
+    batch_size=4,
+    callbacks=[early_stop]
 )
 
 # Plot loss
