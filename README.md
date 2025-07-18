@@ -22,8 +22,6 @@ cd NcosmoVAE
 pip3 install -e .
 ```
 
-After installation, you may remove the cloned repository as **`nnogada`** will be installed locally.
-
 ## Usage
 
 ### Conda Environment Setup
