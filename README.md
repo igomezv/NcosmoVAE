@@ -70,7 +70,7 @@ Contributions to **`NcosmoVAE`** are very welcome! If you have suggestions for i
 - **ncosmovae/**: Core library files.
 - **outputs/**: Model output and logs.
 - **examples files**: Example scripts to demonstrate library usage.
-- **requirements.txt**: List of package dependencies.
+- **requirements.yml**: List of package dependencies.
 - **setup.py**, **setup.cfg**: Packaging and installation scripts.
 
 ## License
