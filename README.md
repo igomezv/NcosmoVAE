@@ -48,17 +48,6 @@ If you find **`ncosmovae`** useful in your research, please consider citing [our
 
 Contributions to **`NcosmoVAE`** are very welcome! If you have suggestions for improvements or new features, feel free to create an issue or pull request.
 
-
-## Project Structure
-
-- **data/**: Sample data files.
-- **docs/**: Documentation files. Use `docs_sphinx` for the latest Sphinx documentation.
-- **ncosmovae/**: Core library files.
-- **outputs/**: Model output and logs.
-- **examples files**: Example scripts to demonstrate library usage.
-- **requirements.yml**: List of package dependencies.
-- **setup.py**, **setup.cfg**: Packaging and installation scripts.
-
 ## License
 
 NcosmoVAE is licensed under the MIT license. See the [LICENSE](LICENSE) file for more details.
