@@ -1,7 +1,6 @@
 # NcosmoVAE
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![arXiv](https://img.shields.io/badge/arXiv-2209.02685-b31b1b.svg)](https://doi.org/10.48550/arXiv.2209.02685)
 [![GitHub Repo stars](https://img.shields.io/github/stars/igomezv/NcosmoVAE?style=social)](https://github.com/igomezv/NcosmoVAE)
 
 **`NcosmoVAE`** is a framework to train a Variational Autoencoder with N-body cosmological simulations.
