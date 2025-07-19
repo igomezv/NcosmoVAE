@@ -8,20 +8,6 @@
 
 Run with: tensorflow 2.15 and python 3.9.
 
-## Documentation
-
-For an introduction and API documentation, visit [ncosmovae` Docs](https://igomezv.github.io/NcosmoVAE).
-
-## Installation
-
-You can install **`ncosmovae`** directly from the source:
-
-```bash
-git clone https://github.com/igomezv/NcosmoVAE
-cd NcosmoVAE
-pip3 install -e .
-```
-
 ## Usage
 
 ### Conda Environment Setup
