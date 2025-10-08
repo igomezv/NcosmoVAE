@@ -2,6 +2,15 @@ import tensorflow as tf
 from tensorflow.keras import layers, Model
 from tensorflow.keras.losses import MeanSquaredError
 
+
+
+@tf.keras.utils.register_keras_serializable(package="NcosmoVAE")
+def sampling(args, latent_dim=512):
+    z_mean, z_log_var = args
+    epsilon = tf.random.normal(shape=tf.shape(z_mean))
+    return z_mean + tf.exp(0.5 * z_log_var) * epsilon
+
+
 class NcosmoVAE(Model):
     def __init__(self, image_size=256, latent_dim=512, kernel_size=3, dense_units=100, **kwargs):
         super(NcosmoVAE, self).__init__(**kwargs)
@@ -25,7 +34,7 @@ class NcosmoVAE(Model):
         x = layers.Dense(self.dense_units, activation="relu")(x)
         z_mean = layers.Dense(self.latent_dim)(x)
         z_log_var = layers.Dense(self.latent_dim)(x)
-        z = layers.Lambda(self.sampling)([z_mean, z_log_var])
+        z = layers.Lambda(lambda args: sampling(args, self.latent_dim))([z_mean, z_log_var])
         return Model(inp, [z_mean, z_log_var, z], name="encoder")
 
     def build_decoder(self):
@@ -40,10 +49,6 @@ class NcosmoVAE(Model):
         out = layers.Conv2DTranspose(1, self.kernel_size, activation="sigmoid", padding="same")(x)
         return Model(inp, out, name="decoder")
 
-    def sampling(self, args):
-        z_mean, z_log_var = args
-        epsilon = tf.random.normal(shape=(tf.shape(z_mean)[0], self.latent_dim))
-        return z_mean + tf.exp(0.5 * z_log_var) * epsilon
 
     def compile(self, optimizer, **kwargs):
         super().compile(**kwargs)
