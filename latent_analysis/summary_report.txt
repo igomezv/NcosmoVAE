@@ -1,0 +1,27 @@
+
+=== Latent Space Analysis Summary ===
+
+Dataset Information:
+- Test set size: 156 samples
+- Projections: 156 samples
+- Latent dimensions: 512
+
+PCA Analysis:
+- Explained variance (PC1): 28.07%
+- Explained variance (PC2): 23.87%
+- Total explained variance (PC1+PC2): 51.94%
+
+Statistical Summary:
+- Projection latent mean: 0.0000 ± 0.0034
+- Average KL divergence: 0.0050
+
+Correlation Analysis:
+- Mean absolute correlation: 0.3598
+- Max correlation: 0.9222
+
+Generated Files:
+- pca_visualization.png
+- tsne_visualization.png
+- latent_distributions.png
+- correlation_matrix.png
+- statistical_analysis.png
