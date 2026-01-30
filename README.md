@@ -31,7 +31,7 @@ Please check examples included in this repository (`example_1.py`, `example_2.py
 If you find **`ncosmovae`** useful in your research, please consider citing [our paper](https://arxiv.org/abs/2209.02685):
 
 ```bibtex
-@article{ncosmovae2025,
+@article{ncosmovae2026,
   title={Variational Autoencoder generating realistic N-Body simulations for dark matter halos},
   author={Chacón-Lavanderos, J. and Gómez-Vargas, I. and Menchaca-Mendez, R. and Vázquez, J. A.},
   journal={arxiv},
